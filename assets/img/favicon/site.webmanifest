@@ -1,0 +1,20 @@
+{
+  "name": "A330-300 for Aerofly FS",
+  "short_name": "A330 Aerofly",
+  "icons": [
+    {
+      "src": "android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "theme_color": "#06080d",
+  "background_color": "#f5b234",
+  "display": "standalone"
+}
