@@ -264,3 +264,30 @@ p { margin: 0; }
 .release .ver { font-family: var(--font-mono); color: var(--accent); font-size: .9rem; }
 .release time { color: var(--muted); font-size: .9rem; }
 .release h2 { font-size: 1.6rem; }
+
+/* --- Installation page, and installation links elsewhere ------------------ */
+.nav a.nav-install { color: var(--accent); font-weight: 600; }
+.nav a.nav-install:hover { color: var(--text); }
+.edition-install { justify-self: start; font-size: .92rem; color: var(--muted); text-decoration: underline; text-underline-offset: 3px; }
+.edition-install:hover { color: var(--text); }
+.platforms { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 30px; }
+.platform { display: grid; gap: 4px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 18px;
+  background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.02)); transition: border-color .2s, transform .2s var(--ease); }
+.platform:hover { border-color: var(--accent); transform: translateY(-2px); }
+.platform b { font-family: var(--font-display); font-size: 1.3rem; }
+.platform span { color: var(--muted); font-size: .9rem; }
+@media (max-width: 640px) { .platforms { grid-template-columns: 1fr; } }
+.install h2[id] { scroll-margin-top: 96px; }
+.prose h3 { font-size: 1.15rem; margin-top: 14px; }
+.prose a:not(.btn) { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+.prose code { font-family: var(--font-mono); font-size: .86em; color: var(--text); background: var(--glass); border: 1px solid var(--line);
+  border-radius: 6px; padding: 1px 6px; overflow-wrap: anywhere; }
+.steps li > strong { color: var(--text); }
+.steps li > ul { margin: 8px 0 4px; padding-left: 20px; display: grid; gap: 6px; list-style: disc; }
+.steps li li { padding-left: 0; }
+.steps li li::before { content: none; counter-increment: none; }
+.steps li li::marker { color: var(--accent); }
+.callout { border: 1px solid var(--line); border-left: 3px solid var(--accent); border-radius: 0 14px 14px 0; padding: 14px 18px; background: rgba(255,255,255,.035); }
+.callout h2 { margin-top: 0; }
+.callout.warn { border-left-color: #e87b5a; }
+.prose .help { margin-top: 28px; }
