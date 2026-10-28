@@ -20,14 +20,14 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#06080d">
   <link rel="icon" href="assets/img/favicon/favicon.ico" sizes="any">
-  <link rel="icon" href="assets/img/favicon/favicon-32x32.png?v=20260930191126" type="image/png" sizes="32x32">
-  <link rel="icon" href="assets/img/favicon/favicon-16x16.png?v=20260930191126" type="image/png" sizes="16x16">
-  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png?v=20260930191126" sizes="180x180">
+  <link rel="icon" href="assets/img/favicon/favicon-32x32.png?v=20261028174536" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/img/favicon/favicon-16x16.png?v=20261028174536" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png?v=20261028174536" sizes="180x180">
   <link rel="manifest" href="assets/img/favicon/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="assets/css/site.css?v=20260930191126">
+  <link rel="stylesheet" href="assets/css/site.css?v=20261028174536">
 </head>
 <body>
 <header class="site-header">
@@ -67,7 +67,10 @@
   </section>
   <section class="page-body">
     <div class="wrap narrow">
-      <article class="release"><header><span class="ver">v1.0.0</span><time>2026</time><h2>Initial release</h2></header><ul class="checks"><li>Airbus A330-343 with Rolls-Royce Trent 772B-60 engines, PC (Aerofly FS 4) and mobile (Aerofly FS) editions</li><li>Fully interactive flight deck: PFD, ND, ECAM with all system pages, two MCDUs, FCU, overhead, pedestal</li><li>Airbus fly by wire with normal, alternate and direct laws and all protections; autoland</li><li>A330 speed envelope, masses, centre of gravity and tail strike attitudes</li><li>Eight wheel brake thermal model per bogie, BRAKES HOT, brake fans</li><li>ROW/ROP runway overrun warning and protection</li><li>GPWS, radio altitude, RETARD, V1 and PITCH PITCH callouts</li><li>Trent 700 3D sound set</li><li>Fourteen airline liveries</li></ul></article>
+      <article class="release"><header><span class="ver">v1.0.3</span><time>October 2026</time><h2>Realistic speeds and centre tank</h2></header><ul class="checks"><li>VLS, VAPP and F speed recalibrated on Airbus A330 data: VLS 135 kt at 180 t in CONF FULL (129 kt before)</li><li>Recommended V2 matches the A330 in every takeoff configuration</li><li>The copilot flies the same corrected takeoff and approach speeds</li><li>Minimum control speed on approach (VMCL) corrected: VLS no longer drops below it at light weights</li><li>Alpha max indication on the PFD now covers CONF 1 (slats only)</li><li>Centre tank active: maximum fuel raised from 44.8 t to 78 t, filled after the wing tanks and used first</li><li>Takeoff trim on the MCDU PERF TAKE OFF page covers the forward centres of gravity of a full centre tank</li></ul></article>
+      <article class="release"><header><span class="ver">v1.0.2</span><time>October 2026</time><h2>Navigation display, fuel system and masses</h2></header><ul class="checks"><li>Compatible with the latest public version of Aerofly FS 4, on PC and mobile</li><li>The Navigation Display shows the flight plan route again in ARC, NAV and PLAN modes</li><li>ECAM WHEEL page: tire pressures, normal and alternate braking, BSCU, hydraulics and brake accumulator</li><li>New fuel system on Aerofly's current fuel model: tanks fill and drain correctly, engines and APU burn fuel from the tanks</li><li>The ECAM FUEL page shows the actual quantity in each tank</li><li>Fixed: fuel (PC), and fuel and payload (mobile), went back to 0 in the Mass menu after a flight</li><li>MCDU INIT B and FUEL PRED pages show the real zero fuel weight</li></ul></article>
+      <article class="release"><header><span class="ver">v1.0.1</span><time>October 2026</time><h2>Aerofly FS 4 update compatibility</h2></header><ul class="checks"><li>Fixed: the A330 did not load after the Aerofly FS 4 update</li><li>MCDU rebuilt on the new Aerofly system, with its new pages, both MCDUs and SEC F-PLN</li></ul></article>
+      <article class="release"><header><span class="ver">v1.0.0</span><time>September 2026</time><h2>Initial release</h2></header><ul class="checks"><li>Airbus A330-343 with Rolls-Royce Trent 772B-60 engines, PC (Aerofly FS 4) and mobile (Aerofly FS) editions</li><li>Fully interactive flight deck: PFD, ND, ECAM with all system pages, two MCDUs, FCU, overhead, pedestal</li><li>Airbus fly by wire with normal, alternate and direct laws and all protections; autoland</li><li>A330 speed envelope, masses, centre of gravity and tail strike attitudes</li><li>Eight wheel brake thermal model per bogie, BRAKES HOT, brake fans</li><li>ROW/ROP runway overrun warning and protection</li><li>GPWS, radio altitude, RETARD, V1 and PITCH PITCH callouts</li><li>Trent 700 3D sound set</li><li>Fourteen airline liveries</li></ul></article>
     </div>
   </section>
 </main>
@@ -84,11 +87,11 @@
         <a href="legal.html">Legal</a>
         <a href="https://www.youtube.com/@A330-Aerofly-Development" target="_blank" rel="noopener">YouTube</a>
       </div>
-      <p class="small">v1.0.0</p>
+      <p class="small">v1.0.3</p>
     </div>
     <p class="small">© 2026 A330 Aerofly Development. Airbus, A330, Aerofly and Rolls-Royce Trent are trademarks of their respective owners.</p>
   </div>
 </footer>
-<script src="assets/js/site.js?v=20260930191126" defer></script>
+<script src="assets/js/site.js?v=20261028174536" defer></script>
 </body>
 </html>
