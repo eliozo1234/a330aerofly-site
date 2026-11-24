@@ -20,14 +20,14 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="theme-color" content="#06080d">
   <link rel="icon" href="assets/img/favicon/favicon.ico" sizes="any">
-  <link rel="icon" href="assets/img/favicon/favicon-32x32.png?v=20261028174536" type="image/png" sizes="32x32">
-  <link rel="icon" href="assets/img/favicon/favicon-16x16.png?v=20261028174536" type="image/png" sizes="16x16">
-  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png?v=20261028174536" sizes="180x180">
+  <link rel="icon" href="assets/img/favicon/favicon-32x32.png?v=20261124185536" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/img/favicon/favicon-16x16.png?v=20261124185536" type="image/png" sizes="16x16">
+  <link rel="apple-touch-icon" href="assets/img/favicon/apple-touch-icon.png?v=20261124185536" sizes="180x180">
   <link rel="manifest" href="assets/img/favicon/site.webmanifest">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
-  <link rel="stylesheet" href="assets/css/site.css?v=20261028174536">
+  <link rel="stylesheet" href="assets/css/site.css?v=20261124185536">
 </head>
 <body>
 <header class="site-header">
@@ -85,19 +85,25 @@
         <p>Install the A330 <code>.tme</code> file exactly like the mods in the tutorial.</p>
 
         <h2 id="ios">iOS · Aerofly FS Global</h2>
-        <p>On iOS, add ons are copied into the Aerofly FS Global app data with 3105, a free app data browser installed outside the App Store. There are two parts: installing 3105 once, then copying the A330 file.</p>
+        <p>On iOS, the A330 file is copied into the Aerofly FS Global app data with WQ Files, a free file browser installed outside the App Store. You install the tools once, then only the last part is needed to update the A330.</p>
+        <p class="callout"><strong>Compatible with the latest iOS.</strong> This method works on iOS and iPadOS 27.0 to <strong>27.2.1</strong>, the latest public version in November 2026, directly on the device and without a computer. It also works on 26.0 to 26.7.2, where SideInstaller needs a pairing file made once on a computer. It does not work on iOS 27.3 beta 2 and later, so install the A330 before updating to iOS 27.3. iOS 18 and earlier are not supported.</p>
         <p class="callout warn"><strong>Required: the DR400.</strong> The mobile edition takes the place of the Robin DR400 in Aerofly FS Global, so you must own the DR400 in the app. Once the A330 <code>.tme</code> file is installed, the DR400 is replaced by the A330-300. Delete the A330 <code>.tme</code> file to get the DR400 back. The DR400 costs $0.99 in the app if you don't own it yet.</p>
-        <p class="callout warn">3105, E-Sign and KSign are third party tools, provided neither by Apple, nor by IPACS, nor by A330 Aerofly Development. You install them at your own risk.</p>
-        <h3>Part 1: install the 3105 app</h3>
-        <p>3105 is a native iOS app data browser that is not available on the App Store, so it has to be sideloaded with an on device signing tool. E-Sign and KSign are the most common tools for this.</p>
-        <ol class="steps"><li><strong>Download the 3105 IPA file</strong><ul><li>Open Safari and go to the official <a href="https://github.com/YangJiiii/3105" target="_blank" rel="noopener">YangJiiii/3105 GitHub repository</a>.</li><li>Open the Releases section, scroll down and download the <code>3105-unsigned.ipa</code> file to your device.</li></ul></li><li><strong>Open your signing tool (E-Sign, KSign)</strong><ul><li>Launch the signing app.</li><li>If you do not have one yet, install an on device signing tool first through Safari, then trust its enterprise certificate in the iOS Settings.</li></ul></li><li><strong>Import and sign the IPA</strong><ul><li>In the signing app, tap the <code>+</code> (Plus) or Import icon.</li><li>Select <code>3105-unsigned.ipa</code> in the Files app.</li><li>Tap the imported file, choose Signature or Sign App, then pick your active or provided certificate.</li></ul></li><li><strong>Install the app</strong><ul><li>When signing finishes, a prompt asks you to install the app.</li><li>Tap Install. The 3105 icon appears on your home screen.</li></ul></li></ol>
-        <h3>Part 2: install the A330 in Aerofly FS Global</h3>
-        <p>Once 3105 is installed and opens, make sure Aerofly FS Global is completely closed before going further.</p>
-        <ol class="steps"><li><strong>Get the A330 file</strong><ul><li>Download the A330 mobile edition from your Gumroad receipt email or library.</li><li><strong>Critical check:</strong> the file must have the <code>.tme</code> extension. Do not unzip or modify it: <code>.zip</code>, <code>.tmc</code> or <code>.tmd</code> files cannot be installed this way.</li></ul></li><li><strong>Find the Aerofly folder in 3105</strong><ul><li>Open 3105.</li><li>In the search bar, look for the Aerofly identifier folder: <code>com.aerofly.aerofly-fs-g1-ios</code></li></ul></li><li><strong>Open the resource files folder</strong><ul><li>Tap the game folder and follow the path <code>Documents</code> ➡️ <code>resource_files</code>.</li><li>If <code>resource_files</code> does not exist inside <code>Documents</code>, create it with the folder icon, using exactly that lowercase name.</li></ul></li><li><strong>Import the A330 file</strong><ul><li>Tap the <code>+</code> (Plus) button at the top right of 3105.</li><li>Select the A330 <code>.tme</code> file to copy it into the folder.</li></ul></li><li><strong>Start the simulator</strong><ul><li>Close 3105 completely.</li><li>Open Aerofly FS Global. The A330-300 is loaded at startup and appears in the aircraft list.</li></ul></li></ol>
+        <p class="callout warn">SideInstaller, Skibidi Tech, LocalDevVPN and WQ Files are third party tools, provided neither by Apple, nor by IPACS, nor by A330 Aerofly Development. You install them at your own risk. Please read the <a href="#ios-disclaimer">iOS disclaimer</a> at the bottom of this page first.</p>
+        <p><a class="btn btn-primary" href="assets/docs/aerofly-ios-wqfiles-guide.pdf" target="_blank" rel="noopener">Open the PDF guide with screenshots</a></p>
+        <p>Illustrated guide by Alvessz, in English (34 pages, 1.9 MB).</p>
+        <h3>Part 1: prepare the iPhone or iPad</h3>
+        <ol class="steps"><li><strong>Turn on Developer Mode</strong><ul><li>Open Settings, Privacy &amp; Security, Developer Mode.</li><li>Turn it on and confirm the restart.</li><li>After the restart, confirm again and enter your passcode.</li></ul></li></ol>
+        <h3>Part 2: install SideInstaller</h3>
+        <ol class="steps"><li><strong>Download the Skibidi Tech profile</strong><ul><li>Open <a href="https://skibiditech.co" target="_blank" rel="noopener">skibiditech.co</a> in Safari.</li><li>Scroll to Download profile, tap it, then tap Allow.</li></ul></li><li><strong>Install the profile</strong><ul><li>Open Settings and tap Profile Downloaded.</li><li>Tap Install at the top right and confirm.</li></ul></li><li><strong>Download SideInstaller</strong><ul><li>Open the Skibidi Tech app from the home screen.</li><li>In the Others tab, tap Install next to SideInstaller and wait for the installation to end.</li></ul></li><li><strong>Trust the app</strong><ul><li>Open Settings, General, VPN &amp; Device Management.</li><li>Tap the certificate of the app (Chengdu Railway Bureau in the guide), then Trust.</li><li>Tap Allow &amp; Restart. The device may restart more than once: do not turn it off yourself.</li></ul></li><li><strong>Set up SideInstaller</strong><ul><li>Open SideInstaller, allow the requested permissions, accept the terms and tap Start.</li><li>When the app asks whether it comes from sideinstaller.net, the guide answers Yes.</li><li>Sign in with an Apple Account. We recommend a secondary account rather than your main one.</li></ul></li></ol>
+        <h3>Part 3: install WQ Files</h3>
+        <ol class="steps"><li><strong>Install LocalDevVPN</strong><ul><li>Install <a href="https://apps.apple.com/app/id6755608044" target="_blank" rel="noopener">LocalDevVPN</a> from the App Store and open it.</li><li>Tap Next until the main screen, then Connect.</li><li>Allow the VPN configuration. Keep it connected until Part 3 is finished.</li></ul></li><li><strong>Download WQ Files</strong><ul><li>Open the <a href="https://github.com/kolbicz/WQFiles" target="_blank" rel="noopener">official WQ Files page on GitHub</a>.</li><li>Scroll to Install with AltStore or SideStore and tap Download .ipa.</li></ul></li><li><strong>Import it in SideInstaller</strong><ul><li>In the Install section of SideInstaller, tap the SideStore menu and choose Custom .ipa.</li><li>Tap Import .ipa, choose <code>WQFiles.ipa</code>, then tap Install Custom .ipa.</li></ul></li><li><strong>Pair the device</strong><ul><li>Open Settings, Privacy &amp; Security, Developer Mode.</li><li>Tap Pair with SideInstaller, then Pair, and enter the 6 digit code shown in SideInstaller.</li></ul></li><li><strong>Finish the installation</strong><ul><li>Go back to SideInstaller, authorize your Apple Account and enter the verification code if asked.</li><li>Wait until the installation ends.</li></ul></li><li><strong>Trust WQ Files</strong><ul><li>Open Settings, General, VPN &amp; Device Management.</li><li>Under Developer App, tap your Apple Account, then Trust.</li></ul></li></ol>
+        <h3>Part 4: install the A330 in Aerofly FS Global</h3>
+        <ol class="steps"><li><strong>Get the A330 file</strong><ul><li>Download the A330 mobile edition from your Gumroad receipt email or library.</li><li><strong>Critical check:</strong> the file must have the <code>.tme</code> extension. Do not unzip, rename or modify it.</li><li>Close Aerofly FS Global completely.</li></ul></li><li><strong>Open the Aerofly folder in WQ Files</strong><ul><li>Open WQ Files and allow the requested permissions.</li><li>Tap Apps and wait for the scan to end, then tap Aerofly FS and Open Data Folder.</li><li>Follow the path <code>Documents</code> ➡️ <code>resource_files</code>. If <code>resource_files</code> does not exist, create it, using exactly that lowercase name.</li></ul></li><li><strong>Import the A330 file</strong><ul><li>Tap the three dots at the top right, then Import Files.</li><li>Choose the A330 <code>.tme</code> file and wait for the import to end.</li><li>Do not move or delete the other files.</li></ul></li><li><strong>Start the simulator</strong><ul><li>Close WQ Files and open Aerofly FS Global. The A330-300 appears in the aircraft list.</li><li>If it does not, force close Aerofly FS Global and open it again.</li></ul></li></ol>
         <p>To update on mobile, download the new <code>.tme</code> file and replace the old one the same way.</p>
       </div>
 
       <p class="help">Still stuck? The <a href="support.html">support page</a> covers the common issues.</p>
+      <p class="callout warn" id="ios-disclaimer"><strong>iOS disclaimer.</strong> The iOS guide was written by Alvessz. It uses third party tools, a configuration profile that changes the DNS settings of your device and an enterprise certificate. A330 Aerofly Development neither provides, nor controls, nor has verified them. Skibidi Tech is not an official source of SideInstaller: its developers recognize only sideinstaller.net and warn that modified copies can steal an Apple Account. Use a secondary Apple Account, and remove the profile and the certificate when you no longer need them. You follow this guide at your own risk.</p>
     </div>
   </section>
 </main>
@@ -119,6 +125,6 @@
     <p class="small">© 2026 A330 Aerofly Development. Airbus, A330, Aerofly and Rolls-Royce Trent are trademarks of their respective owners.</p>
   </div>
 </footer>
-<script src="assets/js/site.js?v=20261028174536" defer></script>
+<script src="assets/js/site.js?v=20261124185536" defer></script>
 </body>
 </html>
